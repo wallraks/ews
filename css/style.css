@@ -1,0 +1,157 @@
+/* YOUR CUSTOM STYLES */
+
+html,
+body,
+header,
+.view, .view2, .view3 {
+    height: 100%;
+}
+/* Navigation*/
+.main-nav{
+    padding-top: 12px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.features .media img{
+    height: 100px;
+    width: 100px;
+}
+.media-heading, .feature-title{
+    margin-bottom: 1rem;
+}
+.features .media img{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.5),0 4px 2px 0 rgba(0,0,0,.10) !important;
+    margin: 5px;
+}
+.calculator{
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    color: #bdbdbd ;
+}
+
+.signIn{
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+.space{
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    width: 100% !important;
+}
+.navbar {
+    background-color: transparent;
+}
+.navbar-brand{
+    padding-top: 12px !important;
+}
+.btn {
+    font-size: .8rem;
+    padding: .85rem 2.13rem;
+    border-radius: 2px;
+    border: 0;
+    color: #fff!important;
+    margin: 6px;
+    white-space: normal!important;
+    word-wrap: break-word;
+}
+.btn-rounded {
+    -webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    -ms-border-radius: 10em;
+    -o-border-radius: 10em;
+    border-radius: 10em;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+.nav-footer ul{
+    list-style-type: none;
+    /*float: left;*/
+}
+.payments-icons ul li, .nav-footer ul li{
+    display: inline-block !important;
+    padding: 5px;
+}
+.top-nav-collapse {
+    background-color: #3F729B;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #3F729B;
+    }
+}
+/*Intro*/
+
+.view {
+    background: url("../img/bg_3.jpg")no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.view2 {
+    background: url("../img/bg.jpg")no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.view3 {
+    background: url("../img/bg_2.jpg")no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .full-bg-img,
+    .view, .view2, .view3 {
+        height: auto;
+        position: relative;
+    }
+}
+.calculator .form-control{
+    background-color: #eeeeee !important;
+}
+/*###############################################*/
+input[type=date], input[type=datetime-local], input[type=email], input[type=number], input[type=password], input[type=search-md], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], textarea.md-textarea {
+    /* background-color: transparent; */
+    border: none;
+    border-bottom: 1px solid #ccc;
+    /*border-radius: .5rem;*/
+    outline: 0;
+    /* height: 2.1rem; */
+    width: 100%;
+    /* font-size: 1rem; */
+    box-shadow: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    transition: all .3s;
+}
+.form-control {
+    padding: .0rem 0 .0rem !important;
+    /* font-size: 1rem; */
+    /* line-height: 1.5; */
+    /*background-color: transparent;*/
+    background-image: none;
+    border-radius: 0;
+    margin-top: .2rem;
+    margin-bottom: 1rem;
+}
+/*######################################33*/
+
+.description {
+    padding-top: 15%;
+    padding-bottom: 3rem;
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .description {
+        padding-top: 7rem;
+        text-align: center;
+    }
+}
+
+/*form fields*/
