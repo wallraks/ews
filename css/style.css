@@ -2,7 +2,7 @@
 
 html,
 body,
-header,
+.wrapper,
 .view, .view2, .view3 {
     height: 100%;
 }
@@ -12,7 +12,13 @@ header,
     padding-left: 10px !important;
     padding-right: 10px !important;
 }
+main{
+    margin-bottom: -20px;
 
+}
+.customers .tab-pane{
+    min-height: 300px !important;
+}
 .features .media img{
     height: 100px;
     width: 100px;
@@ -110,6 +116,20 @@ header,
         position: relative;
     }
 }
+
+.description {
+    padding-top: 15%;
+    padding-bottom: 3rem;
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .description {
+        padding-top: 7rem;
+        text-align: center;
+    }
+}
+
 .calculator .form-control{
     background-color: #eeeeee !important;
 }
@@ -140,18 +160,3 @@ input[type=date], input[type=datetime-local], input[type=email], input[type=numb
     margin-bottom: 1rem;
 }
 /*######################################33*/
-
-.description {
-    padding-top: 15%;
-    padding-bottom: 3rem;
-    color: #fff;
-}
-
-@media (max-width: 992px) {
-    .description {
-        padding-top: 7rem;
-        text-align: center;
-    }
-}
-
-/*form fields*/

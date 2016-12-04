@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Material Design Bootstrap</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Date picker -->
+    <link rel="stylesheet" href="css/bootstrap-datepicker3.standalone.min.css">
+
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Start your project here-->
+
+<!--Navigation & Intro-->
+<header>
+    <!--Navbar-->
+    <nav class="navbar navbar-light white navbar-fixed-top scrolling-navbar">
+        <!-- Collapse button-->
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
+        <i class="fa fa-bars"></i></button>
+        <div class="container">
+            <!--Collapse content-->
+            <div class="collapse navbar-toggleable-xs" id="collapseEx">
+                <!--Navbar Brand-->
+                <a class="navbar-brand" href="index.html" target="_blank">ews.co.ke <span class="align-text-bottom"> TM</span></a>
+                <!--Links-->
+                <ul class="nav navbar-nav">
+                    <li class="nav-item main-nav">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item main-nav">
+                        <a class="nav-link" href="#howItWorks">How It Works</a>
+                    </li>
+                    <li class="nav-item main-nav">
+                        <a class="nav-link" href="#aboutUs">About Us</a>
+                    </li>
+                    <li class="nav-item main-nav">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item main-nav">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item main-nav">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <!--Navbar icons-->
+                <ul class="nav navbar-nav  float-xs-right">
+
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="login.html">Log In</a> -->
+                        <a href="signIn.html" class="btn btn-dark-green btn-rounded">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="signUp.html">Sign Up</a> -->
+                        <a  href="signUp.html" class="btn btn-warning btn-rounded">Sign Up</a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <!--/.Collapse content-->
+        </div>
+    </nav>
+    <!--/.Navbar-->
+</header>
+<!--/Navigation & Intro-->
+
+    <!-- End of Header -->
+    <main class="pt-6 blue-grey lighten-5 ">
+        <section class="contentWide  ">
+            <div class="container ">
+                <div class="card card-block ">
+                    <h4>Welcome [Username]</h4>
+                    <br>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs tabs-2 " role="tablist">
+                        <li class="nav-item ">
+                            <a class="nav-link active " data-toggle="tab" href="#panel1" role="tab">All</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#panel2" role="tab">In Progress</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#panel3" role="tab">Completed</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#panel4" role="tab">Cancelled</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#panel4" role="tab">Expired</a>
+                        </li>
+                    </ul>
+                    <!-- Tab panels -->
+                    <div class="tab-content customers ">
+                        <!--Panel 1-->
+                        <div class="tab-pane fade in active pt-3 pb-3 " id="panel1" role="tabpanel">
+                            <div class=" container">
+                                <p>No record available</p>
+                            </div>
+                        </div>
+                        <!--/.Panel 1-->
+                        <!--Panel 2-->
+                        <div class="tab-pane fade in pt-3 pb-3 " id="panel2" role="tabpanel">
+                            <div class="container">
+                                <!--Form-->
+                                <form action="">
+                                    <div class="form-group">
+                                        <!-- <i class="fa fa-envelope prefix"></i> -->
+                                        <label for="form2">Your email</label>
+                                        <input type="text" id="form2" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <!-- <i class="fa fa-lock prefix"></i> -->
+                                        <label for="form5">Your password</label>
+                                        <input type="password" id="form5" class="form-control">
+                                    </div>
+                                    <div class="checkbox pb-2">
+                                       <label>
+                                         <input type="checkbox">  Keep Me Signed In
+                                       </label>
+                                     </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-warning  btn-rounded wow fadeInLeft btn-sm">Proceed</button>
+                                        <!-- <hr> -->
+                                    </div>
+                                    <div class="form-group">
+                                        <a href="signIn.html" class=" fadeInLeft btn-sm">Already Have an Account?</a>
+                                        <!-- <hr> -->
+                                    </div>
+                                </form>
+                                <!--/.Form-->
+                            </div>
+                        </div>
+                        <!--/.Panel 2-->
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--End of Main section  -->
+
+<!--Footer-->
+<footer class="page-footer dark center-on-small-only text-xs-center">
+
+    <!--Footer Links-->
+    <div class="container">
+        <div class="row">
+
+            <!--Second column-->
+            <div class="col-md-12">
+                <div class="payments-icons">
+                    <h5 class="title">Payments</h5>
+                    <ul>
+                        <li><a href="#!"><img src="img/icons/mastercard.png" alt=""></a></li>
+                        <li><a href="#!"><img src="img/icons/american express.png" alt=""></a></li>
+                        <li><a href="#!"><img src="img/icons/paypal.png" alt=""></a></li>
+                        <li><a href="#!"><img src="img/icons/visa.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--/.Second column-->
+            <!--Third column-->
+            <div class="col-md-12">
+                <!-- <h5 class="title">NAVIGATION</h5> -->
+                <div class="nav-footer ">
+                    <ul>
+                        <li><a href="#!"><small> About Us</small></a></li> |
+                        <li><a href="#!"><small>Money Back Guarantee</small></a></li> |
+                        <li><a href="#!"><small>How it works</small></a></li> |
+                        <li><a href="#!"><small>FAQ for clients</small></a></li> |
+                        <li><a href="terms.html"><small>Terms & Conditions</small></a></li> |
+                        <li><a href="#!"><small>Privacy Policy</small></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--/.Third column-->
+        </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <!--Copyright-->
+    <div class="footer-copyright">
+        <div class="container-fluid">
+            <small>Copyright (c) 2016 EWS All Rights Reserved | Developed by<a href="http://www.sherisoft.com"> Sherisoft Solutions Ltd </a></small>
+
+        </div>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+</body>
+
+</html>
