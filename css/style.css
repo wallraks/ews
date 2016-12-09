@@ -33,6 +33,7 @@ main{
 .calculator{
     background-color: rgba(0, 0, 0, 0.7) !important;
     color: #bdbdbd ;
+    border-radius: 10px;
 }
 
 .signIn{
@@ -133,6 +134,9 @@ main{
 .calculator .form-control{
     background-color: #eeeeee !important;
 }
+.form-control{
+border-radius: 5px !important;
+}
 /*###############################################*/
 input[type=date], input[type=datetime-local], input[type=email], input[type=number], input[type=password], input[type=search-md], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], textarea.md-textarea {
     /* background-color: transparent; */
@@ -160,3 +164,4 @@ input[type=date], input[type=datetime-local], input[type=email], input[type=numb
     margin-bottom: 1rem;
 }
 /*######################################33*/
+.contentWide
