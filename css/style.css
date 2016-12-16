@@ -6,6 +6,9 @@ body,
 .view, .view2, .view3 {
     height: 100%;
 }
+html, body{
+ /*font-weight: 600 !important;*/
+}
 /* Navigation*/
 .main-nav{
     padding-top: 12px !important;
@@ -20,22 +23,19 @@ main{
     min-height: 300px !important;
 }
 .features .media img{
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.5),0 4px 2px 0 rgba(0,0,0,.10) !important;
+    margin: 5px;
 }
 .media-heading, .feature-title{
     margin-bottom: 1rem;
-}
-.features .media img{
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.5),0 4px 2px 0 rgba(0,0,0,.10) !important;
-    margin: 5px;
 }
 .calculator{
     background-color: rgba(0, 0, 0, 0.7) !important;
     color: #bdbdbd ;
     border-radius: 10px;
 }
-
 .signIn{
     background-color: rgba(0, 0, 0, 0.4) !important;
 }
@@ -101,6 +101,13 @@ main{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+.black-header{
+
+    height: 200px !important;
+}
+sup{
+font-size: 10px;
 }
 .view3 {
     background: url("../img/bg_2.jpg")no-repeat center center ;
