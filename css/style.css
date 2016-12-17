@@ -19,6 +19,9 @@ main{
     margin-bottom: -20px;
 
 }
+.md-pills, .section .map-container img, .z-depth-0 {
+    box-shadow: none!important;
+}
 .customers .tab-pane{
     min-height: 300px !important;
 }
