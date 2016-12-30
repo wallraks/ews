@@ -33,7 +33,7 @@
 <header class="wrapper">
 
     <!--Navbar-->
-    <nav class="navbar navbar-dark black navbar-fixed-top scrolling-navbar">
+    <nav class="navbar navbar-light white navbar-fixed-top scrolling-navbar">
 
         <!-- Collapse button-->
         <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
@@ -54,7 +54,7 @@
                         <a class="nav-link" href="howItWorks.html">How It Works</a>
                     </li>
                     <li class="nav-item main-nav">
-                        <a class="nav-link" href="#aboutUs">About Us</a>
+                        <a class="nav-link" href="aboutUs.html">About Us</a>
                     </li>
                     <li class="nav-item main-nav">
                         <a class="nav-link" href="#faq">FAQ</a>
@@ -70,11 +70,11 @@
                 <ul class="nav navbar-nav  float-xs-right">
                     <li class="nav-item">
                         <!-- <a class="nav-link" href="login.html">Log In</a> -->
-                        <a href="signIn.html" class="btn btn-dark-green btn-rounded">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <!-- <a class="nav-link" href="signUp.html">Sign Up</a> -->
-                        <a  href="signUp.html" class="btn btn-warning btn-rounded">Sign Up</a>
+                        <!-- <a href="signIn.html" class="btn btn-outline-default btn-rounded">Login</a> -->
+                        <!-- <button type="button" class="btn light-blue darken-3 active waves-effect btn-rounded">Login</button> -->
+                        <!-- <a href="signIn.html" class="btn light-blue darken-3 waves-effect btn-rounded">Sign Up</a> -->
+                        <button type="button" name="button" class="btn light-blue darken-3 waves-effect btn-rounded" data-toggle="modal" data-target="#modal-login"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Login</button>
+                        <button type="button" name="button" class="btn light-blue darken-3 waves-effect btn-rounded" data-toggle="modal" data-target="#modal-register"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> SIGN UP</button>
                     </li>
                 </ul>
             </div>
@@ -82,32 +82,125 @@
         </div>
     </nav>
     <!--/.Navbar-->
+    <!-- Modal Login -->
+    <div class="modal fade modal-ext col-md-4 offset-md-4 pt-5 " id="modal-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog " role="document">
+            <!--Content-->
+            <div class="modal-content ">
+                <!--Header-->
+                <div class="modal-header  light-blue darken-4 white-text ">
+                    <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="pt-1"><strong> Access Account</strong></h4>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+                    <div class="md-form">
+                        <input type="text" id="form2" class="form-control">
+                        <label for="form2">Your email</label>
+                    </div>
+
+                    <div class="md-form">
+                        <input type="password" id="form3" class="form-control">
+                        <label for="form3">Your password</label>
+                    </div>
+                    <div class="">
+                        <!-- <button class="btn light-blue darken-3 waves-effect btn-rounded btn-sm">Proceed</button> -->
+                        <a href="ClientAccount.html" class="btn light-blue darken-3 waves-effect btn-rounded btn-sm">Proceed</a>
+                    </div>
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer">
+                    <div class="options">
+                        <p>
+                            <small>Not a member? <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal-register">Sign Up</a> | Forgot <a href="#">Password?</a></small>
+                        </p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!-- Modal Login end -->
+    <!-- Modal Register -->
+    <div class="modal fade modal-ext col-lg-4 offset-lg-4 " id="modal-register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog " role="document">
+            <!--Content-->
+            <div class="modal-content ">
+                <!--Header-->
+                <div class="modal-header light-blue darken-4 white-text ">
+                    <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="pt-1"> <strong>Create Account</strong></h4>
+                    <!-- <a href="" class="btn-floating btn-fb btn-small"><i class="fa fa-facebook"></i></a>
+                    <a href="" class="btn-floating btn-tw btn-small"><i class="fa fa-twitter"></i></a>
+                    <a href="" class="btn-floating btn-gplus btn-small"><i class="fa fa-google-plus"></i></a> -->
+                </div>
+                <!--Body-->
+                <div class="modal-body">
+                    <div class="md-form">
+                        <input type="text" id="form2" class="form-control">
+                        <label for="form2">Your name</label>
+                    </div>
+                    <div class="md-form">
+                        <input type="text" id="form2" class="form-control">
+                        <label for="form2">Your email</label>
+                    </div>
+                    <div class="md-form">
+                        <input type="password" id="form3" class="form-control">
+                        <label for="form3">Your password</label>
+                    </div>
+                    <div class="md-form">
+                        <input type="password" id="form4" class="form-control">
+                        <label for="form4">Repeat password</label>
+                    </div>
+                    <div class="text-xs-left">
+                        <button class="btn light-blue darken-3 waves-effect btn-rounded btn-sm">Submit Now</button>
+                    </div>
+                </div>
+                <!--Footer-->
+                <div class="modal-footer ">
+                    <div class="options">
+                        <small>Already have an account? <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal-login"> Log in</a></small>
+                    </div>
+                    <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!-- Modal Register End -->
     <!--Mask-->
-    <div class="view hm-black-strong">
-        <div class="full-bg-img flex-center pattern-2">
+    <div class="view hm-black-strong grey lighten-5">
+        <div class=" flex-center ">
             <div class="container">
                 <div class="row pt-5" id="home">
                     <!--First column-->
-                    <div class="col-lg-6 ">
+                    <div class="col-lg-8 ">
                         <div class="description">
                             <h2 class="h2-responsive wow fadeInLeft">ESSAY WRITING SERVICES </h2>
                             <hr class="hr-dark wow fadeInLeft">
-                            <p class="wow fadeInLeft" data-wow-delay="0.4s">We make it happen just the right way.</p>
+                            <h4 class="strong">Have your academic paper written by a professional writer</h4>
+                            <p class="wow fadeInLeft" data-wow-delay="0.4s">Just place an order, choose the most suitable writer, and watch him or her work. Pay only after you approve the received parts of your paper.</p>
                             <br>
-                            <a  href="#" class="btn btn-dark-green btn-rounded wow fadeInLeft" data-wow-delay="0.7s">Getting Started</a>
-                            <a  href="#" class="btn btn-warning btn-rounded wow fadeInLeft" data-wow-delay="0.7s">Take A Tour</a>
+                            <a  href="#" class="btn light-blue darken-3 btn-rounded wow fadeInLeft" data-wow-delay="0.7s">Getting Started</a>
                         </div>
                     </div>
-                    <div class="col-lg-3"></div>
+                    <!-- <div class="col-lg-2"></div> -->
                     <!--/.First column-->
                     <!--Second column-->
-                    <div class="col-lg-3">
+                    <div class="col-lg-4">
                         <!--Form-->
                         <div class="card calculator wow fadeInRight">
                             <div class="card-block">
                                 <!--Header-->
                                 <div class="">
-                                    <h4> Calculate Price</h4>
+                                    <h4> Place New Order</h4>
                                 </div>
                                 <br>
                                 <!--Body-->
@@ -150,7 +243,7 @@
 
                                 <div class="">
                                     <!-- <button class="btn btn-warning btn-sm">Continue</button> -->
-                                    <a  href="clientAccount.html" class="btn btn-warning btn-sm wow fadeInLeft" data-wow-delay="0.7s">Checkout</a>
+                                    <a  href="clientAccount.html" class="btn light-blue darken-3 btn-sm btn-rounded wow fadeInLeft" data-wow-delay="0.7s">Checkout</a>
 
                                     <!-- <hr> -->
                                 </div>
@@ -165,19 +258,17 @@
         </div>
     </div>
     <!--/.Mask-->
-
 </header>
 <!--/Navigation & Intro-->
 
     <!-- End of Header -->
     <main >
-
-        <div class="container pt-3 pb-3 " id="howItWorks">
-            <h2 class="text-xs-center ">YOU NEED HELP?</h2>
-            <p class=" text-xs-center lead"> All you need just to specify the requirements, and our professional writer will <br>complete a custom essay according to your demands within the timeframe you set</p>
+        <div class="container-fluid pt-3 pb-3  light-blue darken-4 white-text" id="howItWorks">
+            <h4 class="text-xs-center strong">YOU NEED HELP?</h4>
+            <p class=" text-xs-center "> All you need just to specify the requirements, and our professional writer will <br>complete a custom essay according to your demands within the timeframe you set</p>
         </div>
         <div class="features container-fluid grey lighten-5 pt-3  pb-3">
-            <h2 class="text-xs-center ">OUR FEATURES</h2>
+            <h4 class="text-xs-center strong">OUR FEATURES</h4>
             <div class="row pt-4 ">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="media col-lg-6">
@@ -185,7 +276,7 @@
                             <img class="rounded-circle " src="img/icons/deadline.png" alt="Generic placeholder image">
                         </a>
                         <div class="media-body">
-                            <h4 class="media-heading ">ANY DEADLINE, ANY SUBJECT</h4>
+                            <h5 class="media-heading strong">ANY DEADLINE, ANY SUBJECT</h5>
                             <p>Our experts will complete your assignment within a tight timeframe</p>
                         </div>
                     </div>
@@ -194,7 +285,7 @@
                             <img class="rounded-circle " src="img/icons/chat.png" alt="Generic placeholder image">
                         </a>
                         <div class="media-body">
-                            <h4 class="media-heading">ONLINE CHAT WITH WRITERS</h4>
+                            <h5 class="media-heading strong">ONLINE CHAT WITH WRITERS</h5>
                             <p>Talk to your expert online, discuss your paper, ask additional questions.</p>
                         </div>
                     </div>
@@ -207,7 +298,7 @@
                             <img class="rounded-circle" src="img/icons/email.png" alt="Generic placeholder image" >
                         </a>
                         <div class="media-body">
-                            <h4 class="media-heading">EMAIL NOTIFICATIONS</h4>
+                            <h5 class="media-heading strong">EMAIL NOTIFICATIONS</h5>
                             <p>Stay informed about order and service updates, new messages, uploaded files, etc.</p>
                         </div>
                     </div>
@@ -216,7 +307,7 @@
                             <img class="rounded-circle" src="img/icons/plag.png" alt="Generic placeholder image">
                         </a>
                         <div class="media-body">
-                            <h4 class="media-heading">PLAGIARISM FREE</h4>
+                            <h5 class="media-heading strong">PLAGIARISM FREE</h5>
                             <p>Our service has a very strict plagiarism policy. Our experts write custom essays from scratch only.</p>
                         </div>
                     </div>
@@ -229,7 +320,7 @@
                             <img class="rounded-circle" src="img/icons/free.png" alt="Generic placeholder image">
                         </a>
                         <div class="media-body">
-                            <h4 class="media-heading">FREE PREVIEW OF YOUR ORDER</h4>
+                            <h5 class="media-heading strong">FREE PREVIEW OF YOUR ORDER</h5>
                             <p>Ask for a preview of your order and get it immediately.</p>
                         </div>
                     </div>
@@ -238,7 +329,7 @@
                             <img class="rounded-circle" src="img/icons/price.png" alt="Generic placeholder image">
                         </a>
                         <div class="media-body">
-                            <h4 class="media-heading">AFFORDABLE PRICES</h4>
+                            <h5 class="media-heading strong">AFFORDABLE PRICES</h5>
                             <p>Average price per page for essay writing is $9.50. You will choose comfortable price among writers’ offers.</p>
                         </div>
                     </div>
@@ -250,7 +341,7 @@
     <!--End of Main section  -->
 
 <!--Footer-->
-<footer class="page-footer dark center-on-small-only text-xs-center">
+<footer class="page-footer  light-blue darken-4 center-on-small-only text-xs-center">
 
     <!--Footer Links-->
     <div class="container">
