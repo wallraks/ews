@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>EWS service</title>
+    <title>EWS Service</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
@@ -18,8 +18,6 @@
     <!-- Material Design Bootstrap -->
     <!-- <link href="css/mdb.min.css" rel="stylesheet"> -->
     <link href="css/md.css" rel="stylesheet">
-    <!-- Date picker -->
-    <link rel="stylesheet" href="css/bootstrap-datepicker3.standalone.min.css">
 
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
@@ -30,17 +28,13 @@
     <!-- Start your project here-->
 
 <!--Navigation & Intro-->
-<header class="wrapper">
-
+<header>
     <!--Navbar-->
     <nav class="navbar navbar-light white navbar-fixed-top scrolling-navbar">
-
         <!-- Collapse button-->
         <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
         <i class="fa fa-bars"></i></button>
-
         <div class="container">
-
             <!--Collapse content-->
             <div class="collapse navbar-toggleable-xs" id="collapseEx">
                 <!--Navbar Brand-->
@@ -68,15 +62,10 @@
                 </ul>
                 <!--Navbar icons-->
                 <ul class="nav navbar-nav  float-xs-right">
-                    <li class="nav-item">
-                        <!-- <a class="nav-link" href="login.html">Log In</a> -->
-                        <!-- <a href="signIn.html" class="btn btn-outline-default btn-rounded">Login</a> -->
-                        <!-- <button type="button" class="btn light-blue darken-3 active waves-effect btn-rounded">Login</button> -->
-                        <!-- <a href="signIn.html" class="btn light-blue darken-3 waves-effect btn-rounded">Sign Up</a> -->
-                        <button type="button" name="button" class="btn light-blue darken-3 waves-effect btn-rounded" data-toggle="modal" data-target="#modal-login"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Login</button>
-                        <button type="button" name="button" class="btn light-blue darken-3 waves-effect btn-rounded" data-toggle="modal" data-target="#modal-register"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> SIGN UP</button>
-                    </li>
+                    <button type="button" name="button" class="btn light-blue darken-3 waves-effect btn-rounded" data-toggle="modal" data-target="#modal-login"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Login</button>
+                    <button type="button" name="button" class="btn light-blue darken-3 waves-effect btn-rounded" data-toggle="modal" data-target="#modal-register"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> SIGN UP</button>
                 </ul>
+
             </div>
             <!--/.Collapse content-->
         </div>
@@ -107,8 +96,7 @@
                         <label for="form3">Your password</label>
                     </div>
                     <div class="">
-                        <!-- <button class="btn light-blue darken-3 waves-effect btn-rounded btn-sm">Proceed</button> -->
-                        <a href="clientAccount.html" class="btn light-blue darken-3 waves-effect btn-rounded btn-sm">Proceed</a>
+                        <button class="btn light-blue darken-3 waves-effect btn-rounded btn-sm">Proceed</button>
                     </div>
                 </div>
 
@@ -175,26 +163,84 @@
         </div>
     </div>
     <!-- Modal Register End -->
-    <!--Mask-->
-    <div class="view hm-black-strong grey lighten-5">
-        <div class=" flex-center ">
-            <div class="container">
-                <div class="row pt-5" id="home">
-                    <!--First column-->
-                    <div class="col-lg-8 ">
-                        <div class="description ">
-                            <h2 class="h2-responsive wow fadeInLeft">ESSAY WRITING SERVICES </h2>
-                            <hr class="hr-dark wow fadeInLeft">
-                            <h4 class="strong">Have your academic paper written by a professional writer</h4>
-                            <p class="wow fadeInLeft" data-wow-delay="0.4s">Just place an order, choose the most suitable writer, and watch him or her work. Pay only after you approve the received parts of your paper.</p>
-                            <br>
-                            <a  href="#" class="btn light-blue darken-3 btn-rounded wow fadeInLeft" data-wow-delay="0.7s">Getting Started</a>
+</header>
+<!--/Navigation & Intro-->
+
+    <!-- End of Header -->
+    <main class="pt-4">
+        <div class="view black-header ">
+            <img src="img/bg_5.jpg" class="img-responsive" alt="">
+            <div class="mask pattern-7">
+                <div class="verticalcenter text-xs-center">
+                    <h3 class="white-text pt-4"><strong>FAQs</strong></h3>
+                </div>
+            </div>
+        </div>
+        <div class="container pt-3 pb-5">
+
+            <!-- Step One start-->
+            <div class="row pt-2 ">
+                <div class="row px-3">
+                    <div class="col-md-9 grey lighten-4 px-3 py-3">
+                        <h4>Frequently Asked Questions</h4>
+                        <hr>
+                        <!--Accordion wrapper-->
+                        <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+                            <h5 class="lead">General Ordering Information</h5 class="lead">
+                            <!--First panel-->
+                            <div class="panel panel-default">
+                                <!--Panel heading-->
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h5 class="panel-title">
+                                        <a class="arrow-r" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            1. How does our custom writing service work?<i class="fa fa-angle-down rotate-icon"></i>
+                                        </a>
+                                    </h5>
+                                </div>
+                                <!--Panel body-->
+                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    To learn about how our service works, please visit the “How It Works” page where you can read a detailed explanation of our features, along with a guide of steps to get your paper completed
+                                </div>
+                            </div>
+                            <!--/.First panel-->
+                            <!--Second panel-->
+                            <div class="panel panel-default">
+                                <!--Panel heading-->
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h5 class="panel-title">
+                                        <a class="arrow-r" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                                            2. How do I fill in the order form?<i class="fa fa-angle-down rotate-icon"></i>
+                                        </a>
+                                    </h5>
+                                </div>
+                                <!--Panel body-->
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    There are two types of order forms: a short one and a more extended one. The first one is located on the main page of our website. Once you fill out a short order form in the right corner of our website's main page, click the “Continue” button to move on to a more extended form. At this stage, if you do not have an account with EssayGuru.com, it will automatically be created by our system, and a password will be sent to your e-mail immediately. Please note that later, once you place your order and enter your personal account, you will be able to reset this password to any other combination of signs and numbers. Next, you are redirected to a more extended order form, where you can select a deadline, upload any additional materials for the writer, and specify other important requirements for your paper. To learn more about how to place an order with EssayGuru.com, you can visit our “How It Works” page on the website.
+                                </div>
+                            </div>
+                            <!--/.Second panel-->
+                            <!--Third panel-->
+                            <div class="panel panel-default">
+                                <!--Panel heading-->
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h5 class="panel-title">
+                                        <a class="arrow-r" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                                        Collapsible Group Item #3<i class="fa fa-angle-down rotate-icon"></i>
+                                        </a>
+                                    </h5>
+                                </div>
+                                <!--Panel body-->
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                                    raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                            <!--/.Third panel-->
                         </div>
+                        <!--/.Accordion wrapper-->
                     </div>
-                    <!-- <div class="col-lg-2"></div> -->
-                    <!--/.First column-->
-                    <!--Second column-->
-                    <div class="col-lg-4">
+                    <div class="col-md-3  ">
                         <!--Form-->
                         <div class="card calculator wow fadeInRight">
                             <div class="card-block">
@@ -251,102 +297,19 @@
                         </div>
                         <!--/.Form-->
                     </div>
-                    <!--/Second column-->
                 </div>
-
+                <!-- <div class="col-lg-6">
+                    <img src="img/Stage2.jpg" alt="" class="img-fluid z-depth-2">
+                </div> -->
             </div>
-        </div>
-    </div>
-    <!--/.Mask-->
-</header>
-<!--/Navigation & Intro-->
-
-    <!-- End of Header -->
-    <main >
-        <div class="container-fluid pt-3 pb-3  light-blue darken-4 white-text" id="howItWorks">
-            <h4 class="text-xs-center strong">YOU NEED HELP?</h4>
-            <p class=" text-xs-center "> All you need just to specify the requirements, and our professional writer will <br>complete a custom essay according to your demands within the timeframe you set</p>
-        </div>
-        <div class="features container-fluid  pt-3  pb-3">
-            <h4 class="text-xs-center strong">OUR FEATURES</h4>
-            <div class="row pt-4 ">
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="media col-lg-6">
-                        <a class="media-left waves-light">
-                            <img class="rounded-circle " src="img/icons/deadline.png" alt="Generic placeholder image">
-                        </a>
-                        <div class="media-body">
-                            <h5 class="media-heading strong">ANY DEADLINE, ANY SUBJECT</h5>
-                            <p>Our experts will complete your assignment within a tight timeframe</p>
-                        </div>
-                    </div>
-                    <div class="media col-lg-6">
-                        <a class="media-left waves-light">
-                            <img class="rounded-circle " src="img/icons/chat.png" alt="Generic placeholder image">
-                        </a>
-                        <div class="media-body">
-                            <h5 class="media-heading strong">ONLINE CHAT WITH WRITERS</h5>
-                            <p>Talk to your expert online, discuss your paper, ask additional questions.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row pt-2">
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="media col-lg-6">
-                        <a class="media-left waves-light">
-                            <img class="rounded-circle" src="img/icons/email.png" alt="Generic placeholder image" >
-                        </a>
-                        <div class="media-body">
-                            <h5 class="media-heading strong">EMAIL NOTIFICATIONS</h5>
-                            <p>Stay informed about order and service updates, new messages, uploaded files, etc.</p>
-                        </div>
-                    </div>
-                    <div class="media col-lg-6">
-                        <a class="media-left waves-light">
-                            <img class="rounded-circle" src="img/icons/plag.png" alt="Generic placeholder image">
-                        </a>
-                        <div class="media-body">
-                            <h5 class="media-heading strong">PLAGIARISM FREE</h5>
-                            <p>Our service has a very strict plagiarism policy. Our experts write custom essays from scratch only.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row pt-2 ">
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="media col-lg-6">
-                        <a class="media-left waves-light">
-                            <img class="rounded-circle" src="img/icons/free.png" alt="Generic placeholder image">
-                        </a>
-                        <div class="media-body">
-                            <h5 class="media-heading strong">FREE PREVIEW OF YOUR ORDER</h5>
-                            <p>Ask for a preview of your order and get it immediately.</p>
-                        </div>
-                    </div>
-                    <div class="media col-lg-6">
-                        <a class="media-left waves-light">
-                            <img class="rounded-circle" src="img/icons/price.png" alt="Generic placeholder image">
-                        </a>
-                        <div class="media-body">
-                            <h5 class="media-heading strong">AFFORDABLE PRICES</h5>
-                            <p>Average price per page for essay writing is $9.50. You will choose comfortable price among writers’ offers.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         </div>
     </main>
     <!--End of Main section  -->
-
 <!--Footer-->
 <footer class="page-footer  light-blue darken-4 center-on-small-only text-xs-center">
-
     <!--Footer Links-->
     <div class="container">
         <div class="row">
-
             <!--Second column-->
             <div class="col-md-12">
                 <div class="payments-icons">
@@ -368,7 +331,7 @@
                         <li><a href="#!"><small> About Us</small></a></li> |
                         <li><a href="#!"><small>Money Back Guarantee</small></a></li> |
                         <li><a href="howItWorks.html"><small>How it works</small></a></li> |
-                        <li><a href="faq.html"><small>FAQ for clients</small></a></li> |
+                        <li><a href="#!"><small>FAQ for clients</small></a></li> |
                         <li><a href="terms.html"><small>Terms & Conditions</small></a></li> |
                         <li><a href="policy.html"><small>Privacy Policy</small></a></li> |
                         <li><a href="#"><small>Become a Writer</small></a></li>
@@ -379,35 +342,23 @@
         </div>
     </div>
     <!--/.Footer Links-->
-
     <!--Copyright-->
     <div class="footer-copyright">
         <div class="container-fluid">
             <small>Copyright (c) 2016 EWS All Rights Reserved | Developed by<a href="http://www.sherisoft.com"> Sherisoft Solutions Ltd </a></small>
-
         </div>
     </div>
     <!--/.Copyright-->
-
 </footer>
-<!--/.Footer-->
-
+    <!--/.Footer-->
     <!-- SCRIPTS -->
-
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="js/tether.min.js"></script>
-
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
-
-    <!-- Datepicker -->
-    <script src="js/bootstrap-datepicker.min.js" charset="utf-8"></script>
 </body>
-
 </html>
