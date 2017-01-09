@@ -16,6 +16,7 @@ html, body{
     padding-left: 10px !important;
     padding-right: 10px !important;
 }
+
 .navbar .navbar-nav .nav-item:hover {
     border-bottom: 2px solid #0277BD !important;
     color: #EEA200 !important;
